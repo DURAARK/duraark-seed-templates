@@ -1,0 +1,14 @@
+label:
+  Architecture
+description:
+  Adds architecture related information to the building.
+variables:
+  - duraark:location
+seeds:
+  - <http://dbpedia.org/resource/Category:Architecture>
+
+# Resulting SPARQL (for building located in 'Germany'):
+# SELECT ?entity  WHERE {
+#         ?entity ?p <http://dbpedia.org/resource/Germany>.
+#         ?entity dcterms:subject <http://dbpedia.org/resource/Category:Architecture>.
+#}

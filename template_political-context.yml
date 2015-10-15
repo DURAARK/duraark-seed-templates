@@ -1,0 +1,14 @@
+label:
+  Political context
+description:
+  Adds information on the political context of the area the building is located in.
+variables:
+  - duraark:location
+seeds:
+  - <http://dbpedia.org/resource/Category:Politics>
+
+# Resulting SPARQL (for building located in 'Germany'):
+# SELECT ?entity  WHERE {
+#         ?entity ?p <http://dbpedia.org/resource/Germany>.
+#         ?entity dcterms:subject <http://dbpedia.org/resource/Category:Politics>.
+#}
